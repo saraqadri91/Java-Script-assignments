@@ -74,7 +74,7 @@
 //         hasSpecialSymbol=true;
 //         break;
 //     }
-    
+
 // }
 // if (hasSpecialSymbol) {
 //     alert("Please enter a valid username without special symbols like @, ., ,, !");
@@ -82,20 +82,41 @@
 //     alert("Username accepted: " + userName);
 // }
 
-// question 13
-var A = ["cake", "apple pie", "cookie", "chips", "patties"];
-var userInput = prompt("Enter an item to search");
-var found = false;
-for (var i = 0; i < A.length; i++) {
-    var avail = A[i].toLocaleLowerCase();
- if (avail === userInput) {
-    found = true;
-    break;    
- }    
-}
-if (found) {
-    alert("Yes, '" + A.indexOf(userInput) + "' is found in the list.");
-} else {
-    alert("No, '" + userInput + "' is not found in the list.");
-}
+// // question 13
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var userInput = prompt("Enter an item to search");
+// var found = false;
+// for (var i = 0; i < A.length; i++) {
+//     var avail = A[i].toLocaleLowerCase();
+//  if (avail === userInput) {
+//     found = true;
+//     break;    
+//  }    
+// }
+// if (found) {
+//     alert("Yes, '" + A.indexOf(userInput) + "' is found in the list.");
+// } else {
+//     alert("No, '" + userInput + "' is not found in the list.");
+// }
+
+// question 16
+// // var university = "University of Karachi";
+// // var inArr = university.split(" ") 
+// // console.log(inArr);
+// // for (var i = 0; i < inArr.length; i++) {
+// //     document.write(inArr[i] + "<br>");
+// }
+
+// question 17
+var user = prompt("enter the sentence ")
+if (user.length > 0) {
+    var lastchar = user.charAt(user.length - 1)
     
+    alert("The last character is " + lastchar)
+
+}
+else{alert("please enter a valid sentence")}
+// question 18
+// var str = "The quick brown fox jumps over the  lazy dog"
+// var cnvrt = str.toLowerCase().split(" ").filter(word => word  === "the").length
+// console.log(cnvrt);
